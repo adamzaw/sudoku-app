@@ -19,7 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Main extends AppCompatActivity implements OnClickListener {
 
-    private static final String mark = "Sudoku";
+    private static final String TAG = "Sudoku";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,8 @@ public class Main extends AppCompatActivity implements OnClickListener {
         buttonInfo.setOnClickListener(this);
         View buttonNewGame = findViewById(R.id.new_game_button);
         buttonNewGame.setOnClickListener(this);
+        View buttonExit = findViewById(R.id.exit_button);
+        buttonExit.setOnClickListener(this);
 
 
     }
@@ -43,6 +45,9 @@ public class Main extends AppCompatActivity implements OnClickListener {
             case R.id.information_button:
                 Intent i = new Intent(this, Info.class);
                 startActivity(i);
+                break;
+            case R.id.exit_button:
+                finish();
                 break;
 
         }
@@ -62,7 +67,10 @@ public class Main extends AppCompatActivity implements OnClickListener {
     }
 
     private void runGame(int which) {
-        Log.d(mark, "click " + which);
+        Log.d(TAG, "click " + which);
+        Intent intent = new Intent(Main.this, Game.class);
+        intent.putExtra(Game.DIFFICULT_KEY, which);
+        startActivity(intent);
     }
 
     @Override

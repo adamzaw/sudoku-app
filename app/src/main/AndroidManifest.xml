@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".GameBoard" />
+        <activity android:name=".Game"
+            android:label="@string/game_tittle"/>
         <activity android:name=".Preferences"
             android:label="@string/label_settings" />
         <activity

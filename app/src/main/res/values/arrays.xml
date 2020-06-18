@@ -2,7 +2,7 @@
 <resources>
     <array name="level">
         <item>@string/label_easy</item>
-        <item>@string/label_middle</item>
+        <item>@string/label_medium</item>
         <item>@string/label_hard</item>
     </array>
 </resources>
