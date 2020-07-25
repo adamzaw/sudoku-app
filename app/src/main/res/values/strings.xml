@@ -6,7 +6,11 @@
     <string name="label_info">Information</string>
     <string name="label_exit">Exit</string>
     <string name="info_title">Informacje</string>
-    <string name="info_text">Gra sudoku</string>
+    <string name="info_text">/Gra sudoku.
+        Endeavour by Ron Gelinas Chillout Lounge | https://soundcloud.com/atmospheric-music-portal
+        Music promoted by https://www.free-stock-music.com
+        Creative Commons Attribution 3.0 Unported License
+        https://creativecommons.org/licenses/by/3.0/deed.en_US </string>
     <string name="label_score">scoreboard</string>
     <string name="label_settings">Settings</string>
     <string name="settings_title">Sudoku settings</string>

@@ -50,7 +50,7 @@ public class KeyPad extends Dialog {
             keypad.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    returnResult(0);
+                    dismiss();
                 }
             });
         }

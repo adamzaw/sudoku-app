@@ -91,4 +91,15 @@ public class Main extends AppCompatActivity implements OnClickListener {
         }
         return false;
     }
+    @Override
+    protected void onResume(){
+        super.onResume();
+        Music.play(this, R.raw.main);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Music.stop(this);
+    }
 }

@@ -200,4 +200,15 @@ public class Game extends AppCompatActivity {
         }
         return c1;
     }
+    @Override
+    protected void onResume(){
+        super.onResume();
+        Music.play(this, R.raw.main);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Music.stop(this);
+    }
 }
