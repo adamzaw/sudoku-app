@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout android:id="@+id/keypad" xmlns:android="http://schemas.android.com/apk/res/android" android:stretchColumns="*" android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical">
+    <TableRow></TableRow>
+
     <TableRow>
         <Button android:id="@+id/keypad_1" android:text="1"> </Button>
         <Button android:id="@+id/keypad_2" android:text="2"> </Button>
@@ -14,5 +16,7 @@
         <Button android:id="@+id/keypad_7" android:text="7"> </Button>
         <Button android:id="@+id/keypad_8" android:text="8"> </Button>
         <Button android:id="@+id/keypad_9" android:text="9"> </Button>
+
+
     </TableRow>
 </TableLayout>
