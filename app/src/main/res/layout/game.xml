@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/row0"
+        layout="@layout/row_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/row1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <include
+        android:id="@+id/row1"
+        layout="@layout/row_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/row2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <include
+        android:id="@+id/row2"
+        layout="@layout/row_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/row3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row1"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <include
+        android:id="@+id/row3"
+        layout="@layout/row_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/row4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <include
+        android:id="@+id/row4"
+        layout="@layout/row_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/row5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row3"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <include
+        android:id="@+id/row5"
+        layout="@layout/row_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/row6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row4" />
+
+    <include
+        android:id="@+id/row6"
+        layout="@layout/row_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/row7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row5"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <include
+        android:id="@+id/row7"
+        layout="@layout/row_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/row8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row6"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <include
+        android:id="@+id/row8"
+        layout="@layout/row_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row7"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row8">
+
+        <TableRow android:layout_width="wrap_content">
+
+            <Button
+                android:id="@+id/keypad_1"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/keypad_2"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/keypad_3"
+                android:layout_weight="1"
+                android:text="3" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/keypad_4"
+                android:layout_weight="1"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/keypad_5"
+                android:layout_weight="1"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/keypad_6"
+                android:layout_weight="1"
+                android:text="6" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/keypad_7"
+                android:layout_weight="1"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/keypad_8"
+                android:layout_weight="1"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/keypad_9"
+                android:layout_weight="1"
+                android:text="9" />
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
